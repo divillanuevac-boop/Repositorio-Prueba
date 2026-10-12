@@ -1,21 +1,24 @@
 {
-  "name": "integration-solutions-qa",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-  "test": "jest",
-  "test:coverage": "run-tests.bat"
- },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    ""jest": {
-    "collectCoverage": true,
-    "collectCoverageFrom": ["src/**/*.js"],
-    "coverageReporters": ["text", "lcov"],
-    "coverageDirectory": "coverage"
-  }
+     "name": "integration-solutions-qa",
+     "version": "1.0.0",
+     "main": "index.js",
+     "scripts": {
+          "test": "jest",
+          "test:coverage": "run-tests.bat"
+     },
+     "license": "ISC",
+     "jest": {
+          "collectCoverage": true,
+          "collectCoverageFrom": [
+               "src/**/*.js"
+          ],
+          "coverageReporters": [
+               "text",
+               "lcov"
+          ],
+          "coverageDirectory": "coverage"
+     },
+     "devDependencies": {
+          "jest": "^30.5.2"
+     }
 }
