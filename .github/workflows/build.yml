@@ -21,6 +21,6 @@ jobs:
         continue-on-error: true
       - name: Análisis SonarCloud
         # Usa la línea "uses" exacta que te muestra SonarCloud en el paso de configuración
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
